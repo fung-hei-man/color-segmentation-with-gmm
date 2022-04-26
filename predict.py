@@ -6,8 +6,7 @@ OUTPUT_PATH = 'output/segments/'
 
 def predict_image(model, image, image_shape, model_name, img_name, g_num):
     result = model.predict(image)
-    print(f"===== Predict {img_name} with {model_name} ({g_num} Gaussians) =====")
-    print(result)
+    print(f"=== Predict {img_name} with {model_name} ({g_num} Gaussians) ===")
     result_img = result.reshape(image_shape)
 
     plt.title(f"Predict {img_name} with {model_name} ({g_num} Gaussians)")
@@ -17,13 +16,32 @@ def predict_image(model, image, image_shape, model_name, img_name, g_num):
     plt.show()
     plt.clf()
 
-
-def convert_ground_truth(ground_truth):
-    ground_truth = ground_truth.reshape((-1, 3))
-    return ground_truth
+    return result
 
 
-def compare_result(label, ground_truth, model_name, img_name):
-    ground_truth = convert_ground_truth(ground_truth)
-    print(f'=== {img_name} ===')
-    print(ground_truth)
+# white (255) = playing field in mask
+def get_playf_gaussian_labels(prediction, ground_truth):
+    pred_bins = np.bincount(prediction)
+    # len(pred_bins) = g_nums
+    playf_bins = np.zeros(len(pred_bins))
+    one_d_gt = ground_truth[:, 0]
+
+    for i in range(len(one_d_gt)):
+        if one_d_gt[i] == 255:
+            playf_bins[prediction[i]] += 1
+
+    print('pred_bins')
+    print(pred_bins)
+    print('playf_bins')
+    print(playf_bins)
+
+    gmm_is_gaussion = [playf_bins[i]/pred_bins[i] > 0.5 for i in range(len(playf_bins))]
+    gmm_index = np.array(range(len(pred_bins)))
+
+    return gmm_index[gmm_is_gaussion]
+
+
+def compare_result(prediction, ground_truth, model_name, img_name):
+    gmm_is_gaussion = get_playf_gaussian_labels(prediction, ground_truth)
+    print('gmm_is_gaussion')
+    print(gmm_is_gaussion)
