@@ -1,6 +1,7 @@
 import numpy as np
 import joblib
 from skimage import io
+import time
 
 import predict
 import train
@@ -26,7 +27,7 @@ def convert_to_1d_arr(img):
     return img.reshape((-1, 3))[:, 0]
 
 
-def load_model(suffix):
+def load_model(suffix, img1, img2):
     global model1, model2
     try:
         model1 = joblib.load(f"{OUTPUT_PATH}models/model1_{str(suffix)}")
@@ -43,26 +44,31 @@ if __name__ == '__main__':
         img1_name = f'{INPUT_PATH}1.jpg'
         img2_name = f'{INPUT_PATH}2.jpg'
 
-        load_model(g_num)
-
         img1_shape, img1 = reshape_image(io.imread(img1_name))
         img2_shape, img2 = reshape_image(io.imread(img2_name))
+
+        load_model(g_num, img1, img2)
 
         truth1 = convert_to_1d_arr(io.imread(f'{INPUT_PATH}1_mask.png'))
         truth2 = convert_to_1d_arr(io.imread(f'{INPUT_PATH}2_mask.png'))
 
-        print(f">>> Image: {img1_name}, Model: M1, Mixture#: {g_num}")
+        print(f"\n>>> Image: {img1_name}, Model: M1, Mixture#: {g_num}")
+        train_time = time.time()
         p11 = predict.predict_image(model1, img1, img1_shape[:2], 'M1', 'soccer1', g_num)
         predict.compare_result(p11, truth1, 'M1', g_num, 'soccer1')
+        print(f'Prediction time of [Image: {img1_name}, Model: M1, Mixture#: {g_num}]: {time.time() - train_time}')
 
-        print(f">>> Image: {img1_name}, Model: M2, Mixture#: {g_num}")
+        print(f"\n>>> Image: {img1_name}, Model: M2, Mixture#: {g_num}")
         p21 = predict.predict_image(model2, img1, img1_shape[:2], 'M2', 'soccer1', g_num)
         predict.compare_result(p21, truth1, 'M2', g_num, 'soccer1')
+        print(f'Prediction time of [Image: {img1_name}, Model: M2, Mixture#: {g_num}]: {time.time() - train_time}')
 
-        print(f">>> Image: {img2_name}, Model: M1, Mixture#: {g_num}")
+        print(f"\n>>> Image: {img2_name}, Model: M1, Mixture#: {g_num}")
         p12 = predict.predict_image(model1, img2, img2_shape[:2], 'M1', 'soccer2', g_num)
         predict.compare_result(p12, truth2, 'M1', g_num, 'soccer2')
+        print(f'Prediction time of [Image: {img2_name}, Model: M1, Mixture#: {g_num}]: {time.time() - train_time}')
 
-        print(f">>> Image: {img2_name}, Model: M2, Mixture#: {g_num}")
+        print(f"\n>>> Image: {img2_name}, Model: M2, Mixture#: {g_num}")
         p22 = predict.predict_image(model2, img2, img2_shape[:2], 'M2', 'soccer2', g_num)
         predict.compare_result(p22, truth2, 'M2', g_num, 'soccer2')
+        print(f'Prediction time of [Image: {img2_name}, Model: M2, Mixture#: {g_num}]: {time.time() - train_time}')

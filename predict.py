@@ -18,6 +18,26 @@ def predict_image(model, image, image_shape, model_name, img_name, g_num):
     return result
 
 
+def compare_result(prediction, ground_truth, model_name, g_num, img_name):
+    gmm_is_gaussian = get_playf_gaussian_labels(prediction, ground_truth)
+    print('gmm_is_gaussian', end=': ')
+    print(gmm_is_gaussian)
+    binary_prediction = convert_pred_to_binary(prediction, gmm_is_gaussian)
+    t_pos = 0
+    f_pos = 0
+    f_neg = 0
+
+    for i in range(len(ground_truth)):
+        if (ground_truth[i] == 255 and binary_prediction[i] == 1) or (ground_truth[i] == 0 and binary_prediction[i] == 0):
+            t_pos += 1
+        elif binary_prediction[i] == 1 and ground_truth[i] == 0:
+            f_pos += 1
+        elif ground_truth[i] == 255 and binary_prediction[i] == 0:
+            f_neg += 1
+
+    calculate_performance(len(ground_truth), t_pos, f_pos, f_neg, img_name, model_name, g_num)
+
+
 # white (255) = playing field in mask
 def get_playf_gaussian_labels(prediction, ground_truth):
     pred_bins = np.bincount(prediction)
@@ -49,21 +69,8 @@ def convert_pred_to_binary(prediction, gmm_is_gaussian):
     return prediction
 
 
-def compare_result(prediction, ground_truth, model_name, g_num, img_name):
-    gmm_is_gaussian = get_playf_gaussian_labels(prediction, ground_truth)
-    print('gmm_is_gaussian', end=': ')
-    print(gmm_is_gaussian)
-    binary_prediction = convert_pred_to_binary(prediction, gmm_is_gaussian)
-    correct_num = 0
-
-    for i in range(len(ground_truth)):
-        if ground_truth[i] == 255 and binary_prediction[i] == 1:
-            correct_num += 1
-        # both 0
-        elif ground_truth[i] == binary_prediction[i]:
-            correct_num += 1
-
-    print(f'Number of correct pixel {correct_num}, total pixel {len(ground_truth)}')
-
-    accuracy = correct_num / len(ground_truth)
-    print(f'* Accuracy of {img_name} with {model_name} ({g_num} Gaussian): {accuracy}')
+def calculate_performance(total, t_pos, f_pos, f_neg, img_name, model_name, g_num):
+    print(f'* Result of {img_name} with {model_name} ({g_num} Gaussian) *')
+    print(f'  Accuracy: {t_pos / total} ')
+    print(f'  Precision: {t_pos / (t_pos + f_pos)} ')
+    print(f'  Recall: {t_pos / (t_pos + f_neg)} ')
