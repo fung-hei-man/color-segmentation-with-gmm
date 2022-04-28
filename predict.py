@@ -24,18 +24,21 @@ def compare_result(prediction, ground_truth, model_name, g_num, img_name):
     print(gmm_is_gaussian)
     binary_prediction = convert_pred_to_binary(prediction, gmm_is_gaussian)
     t_pos = 0
+    t_neg = 0
     f_pos = 0
     f_neg = 0
 
     for i in range(len(ground_truth)):
-        if (ground_truth[i] == 255 and binary_prediction[i] == 1) or (ground_truth[i] == 0 and binary_prediction[i] == 0):
+        if ground_truth[i] == 255 and binary_prediction[i] == 1:
             t_pos += 1
-        elif binary_prediction[i] == 1 and ground_truth[i] == 0:
-            f_pos += 1
         elif ground_truth[i] == 255 and binary_prediction[i] == 0:
             f_neg += 1
+        elif ground_truth[i] == 0 and binary_prediction[i] == 1:
+            f_pos += 1
+        elif ground_truth[i] == 0 and binary_prediction[i] == 0:
+            t_neg += 1
 
-    calculate_performance(len(ground_truth), t_pos, f_pos, f_neg, img_name, model_name, g_num)
+    calculate_performance(len(ground_truth), t_pos, t_neg, f_pos, f_neg, img_name, model_name, g_num)
 
 
 # white (255) = playing field in mask
@@ -69,8 +72,8 @@ def convert_pred_to_binary(prediction, gmm_is_gaussian):
     return prediction
 
 
-def calculate_performance(total, t_pos, f_pos, f_neg, img_name, model_name, g_num):
+def calculate_performance(total, t_pos, t_neg, f_pos, f_neg, img_name, model_name, g_num):
     print(f'* Result of {img_name} with {model_name} ({g_num} Gaussian) *')
-    print(f'  Accuracy: {t_pos / total} ')
+    print(f'  Accuracy: {(t_pos + t_neg) / total} ')
     print(f'  Precision: {t_pos / (t_pos + f_pos)} ')
     print(f'  Recall: {t_pos / (t_pos + f_neg)} ')
