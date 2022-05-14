@@ -1,171 +1,171 @@
 Training time of M1 (2 gaussians): 0.374614953994751
 Training time of M2 (2 gaussians): 1.0138461589813232
 
->>> Image: input/soccer1.jpg, Model: M1, Mixture#: 2
+>>> Image: input/image1.jpg, Model: M1, Mixture#: 2
 pred_bins: [13382 76618]
 playf_bins: [ 1802. 75797.]
 gmm_is_gaussian: [1]
-* Result of soccer1 with M1 (2 Gaussian) *
+* Result of image1 with M1 (2 Gaussian) *
   Accuracy: 0.9708555555555556
   Precision: 0.9892845023362656
   Recall: 0.9767780512635472
-Prediction time of [Image: input/soccer1.jpg, Model: M1, Mixture#: 2]: 0.5656783580780029
+Prediction time of [Image: input/image1.jpg, Model: M1, Mixture#: 2]: 0.5656783580780029
 
->>> Image: input/soccer1.jpg, Model: M2, Mixture#: 2
+>>> Image: input/image1.jpg, Model: M2, Mixture#: 2
 pred_bins: [11856 78144]
 playf_bins: [  857. 76742.]
 gmm_is_gaussian: [1]
-* Result of soccer1 with M2 (2 Gaussian) *
+* Result of image1 with M2 (2 Gaussian) *
   Accuracy: 0.9749
   Precision: 0.9820587633087633 
   Recall: 0.98895604324798
-Prediction time of [Image: input/soccer1.jpg, Model: M2, Mixture#: 2]: 1.0529344081878662
+Prediction time of [Image: input/image1.jpg, Model: M2, Mixture#: 2]: 1.0529344081878662
 
->>> Image: input/soccer2.jpg, Model: M1, Mixture#: 2
+>>> Image: input/image2.jpg, Model: M1, Mixture#: 2
 pred_bins: [82810  3990]
 playf_bins: [51999.  3976.]
 gmm_is_gaussian: [1]
-* Result of soccer2 with M1 (2 Gaussian) *
+* Result of image2 with M1 (2 Gaussian) *
   Accuracy: 0.4007718894009217
   Precision: 0.9964912280701754
   Recall: 0.07103171058508263
-Prediction time of [Image: input/soccer2.jpg, Model: M1, Mixture#: 2]: 1.6537163257598877
+Prediction time of [Image: input/image2.jpg, Model: M1, Mixture#: 2]: 1.6537163257598877
 
->>> Image: input/soccer2.jpg, Model: M2, Mixture#: 2
+>>> Image: input/image2.jpg, Model: M2, Mixture#: 2
 pred_bins: [35677 51123]
 playf_bins: [ 6260. 49715.]
 gmm_is_gaussian: [1]
-* Result of soccer2 with M2 (2 Gaussian) *
+* Result of image2 with M2 (2 Gaussian) *
   Accuracy: 0.9116589861751152
   Precision: 0.9724585802867594
   Recall: 0.8881643590888789
-Prediction time of [Image: input/soccer2.jpg, Model: M2, Mixture#: 2]: 2.179003953933716
+Prediction time of [Image: input/image2.jpg, Model: M2, Mixture#: 2]: 2.179003953933716
 Training time of M1 (4 gaussians): 0.6314201354980469
 Training time of M2 (4 gaussians): 1.8702175617218018
 
->>> Image: input/soccer1.jpg, Model: M1, Mixture#: 4
+>>> Image: input/image1.jpg, Model: M1, Mixture#: 4
 pred_bins: [32604  7070  5969 44357]
 playf_bins: [3.1665e+04 2.4000e+01 1.5640e+03 4.4346e+04]
 gmm_is_gaussian: [0 3]
-* Result of soccer1 with M1 (4 Gaussian) *
+* Result of image1 with M1 (4 Gaussian) *
   Accuracy: 0.9718
   Precision: 0.987656085549824
   Recall: 0.9795358187605511
-Prediction time of [Image: input/soccer1.jpg, Model: M1, Mixture#: 4]: 0.7164130210876465
+Prediction time of [Image: input/image1.jpg, Model: M1, Mixture#: 4]: 0.7164130210876465
 
->>> Image: input/soccer1.jpg, Model: M2, Mixture#: 4
+>>> Image: input/image1.jpg, Model: M2, Mixture#: 4
 pred_bins: [ 3070 62931 16048  7951]
 playf_bins: [    0. 62654. 14572.   373.]
 gmm_is_gaussian: [1 2]
-* Result of soccer1 with M2 (4 Gaussian) *
+* Result of image1 with M2 (4 Gaussian) *
   Accuracy: 0.9763777777777778
   Precision: 0.9778042264399397
   Recall: 0.9951932370262503
-Prediction time of [Image: input/soccer1.jpg, Model: M2, Mixture#: 4]: 1.3842847347259521
+Prediction time of [Image: input/image1.jpg, Model: M2, Mixture#: 4]: 1.3842847347259521
 
->>> Image: input/soccer2.jpg, Model: M1, Mixture#: 4
+>>> Image: input/image2.jpg, Model: M1, Mixture#: 4
 pred_bins: [ 5376 27675 53548   201]
 playf_bins: [ 5360.  3467. 46949.   199.]
 gmm_is_gaussian: [0 2 3]
-* Result of soccer2 with M1 (4 Gaussian) *
+* Result of image2 with M1 (4 Gaussian) *
   Accuracy: 0.8838248847926268
   Precision: 0.8880845665961945
   Recall: 0.9380616346583296
-Prediction time of [Image: input/soccer2.jpg, Model: M1, Mixture#: 4]: 1.9004292488098145
+Prediction time of [Image: input/image2.jpg, Model: M1, Mixture#: 4]: 1.9004292488098145
 
->>> Image: input/soccer2.jpg, Model: M2, Mixture#: 4
+>>> Image: input/image2.jpg, Model: M2, Mixture#: 4
 pred_bins: [16021 39109 14459 17211]
 playf_bins: [    0. 38277. 13281.  4417.]
 gmm_is_gaussian: [1 2]
-* Result of soccer2 with M2 (4 Gaussian) *
+* Result of image2 with M2 (4 Gaussian) *
   Accuracy: 0.9259562211981567
   Precision: 0.9624775985663082
   Recall: 0.921089772219741
-Prediction time of [Image: input/soccer2.jpg, Model: M2, Mixture#: 4]: 2.42630934715271
+Prediction time of [Image: input/image2.jpg, Model: M2, Mixture#: 4]: 2.42630934715271
 Training time of M1 (6 gaussians): 0.8561129570007324
 Training time of M2 (6 gaussians): 5.750898838043213
 
->>> Image: input/soccer1.jpg, Model: M1, Mixture#: 6
+>>> Image: input/image1.jpg, Model: M1, Mixture#: 6
 pred_bins: [36502  2263 39529  2777  2058  6871]
 playf_bins: [3.5817e+04 0.0000e+00 3.9519e+04 8.0000e+00 3.0000e+00 2.2520e+03]
 gmm_is_gaussian: [0 2]
-* Result of soccer1 with M1 (6 Gaussian) *
+* Result of image1 with M1 (6 Gaussian) *
   Accuracy: 0.9671333333333333
   Precision: 0.9908589917270587
   Recall: 0.9708372530573848
-Prediction time of [Image: input/soccer1.jpg, Model: M1, Mixture#: 6]: 0.5896096229553223
+Prediction time of [Image: input/image1.jpg, Model: M1, Mixture#: 6]: 0.5896096229553223
 
->>> Image: input/soccer1.jpg, Model: M2, Mixture#: 6
+>>> Image: input/image1.jpg, Model: M2, Mixture#: 6
 pred_bins: [   56  3794 74777  6467  2680  2226]
 playf_bins: [9.0000e+00 2.0000e+00 7.4263e+04 1.5250e+03 0.0000e+00 1.8000e+03]
 gmm_is_gaussian: [2 5]
-* Result of soccer1 with M2 (6 Gaussian) *
+* Result of image1 with M2 (6 Gaussian) *
   Accuracy: 0.9724888888888888
   Precision: 0.9877926834019454
   Recall: 0.980205930488795
-Prediction time of [Image: input/soccer1.jpg, Model: M2, Mixture#: 6]: 1.0950818061828613
+Prediction time of [Image: input/image1.jpg, Model: M2, Mixture#: 6]: 1.0950818061828613
 
->>> Image: input/soccer2.jpg, Model: M1, Mixture#: 6
+>>> Image: input/image2.jpg, Model: M1, Mixture#: 6
 pred_bins: [ 1867  3674   129  3699  7045 70386]
 playf_bins: [1.8650e+03 0.0000e+00 1.2700e+02 0.0000e+00 2.1000e+01 5.3962e+04]
 gmm_is_gaussian: [0 2 5]
-* Result of soccer2 with M1 (6 Gaussian) *
+* Result of image2 with M1 (6 Gaussian) *
   Accuracy: 0.8104953917050691
   Precision: 0.7730374955099334
   Recall: 0.9996248325145154
-Prediction time of [Image: input/soccer2.jpg, Model: M1, Mixture#: 6]: 1.6267387866973877
+Prediction time of [Image: input/image2.jpg, Model: M1, Mixture#: 6]: 1.6267387866973877
 
->>> Image: input/soccer2.jpg, Model: M2, Mixture#: 6
+>>> Image: input/image2.jpg, Model: M2, Mixture#: 6
 pred_bins: [23399  4945    79 23475  6977 27925]
 playf_bins: [2.3282e+04 0.0000e+00 7.4000e+01 5.5390e+03 1.0000e+00 2.7079e+04]
 gmm_is_gaussian: [0 2 5]
-* Result of soccer2 with M2 (6 Gaussian) *
+* Result of image2 with M2 (6 Gaussian) *
   Accuracy: 0.9250230414746544
   Precision: 0.9811684142948855
   Recall: 0.9010272443054935
-Prediction time of [Image: input/soccer2.jpg, Model: M2, Mixture#: 6]: 2.1876769065856934
+Prediction time of [Image: input/image2.jpg, Model: M2, Mixture#: 6]: 2.1876769065856934
 Training time of M1 (8 gaussians): 1.6108524799346924
 Training time of M2 (8 gaussians): 7.242374420166016
 
->>> Image: input/soccer1.jpg, Model: M1, Mixture#: 8
+>>> Image: input/image1.jpg, Model: M1, Mixture#: 8
 pred_bins: [37509  5408  1843   950 33480  2033  1760  7017]
 playf_bins: [3.7329e+04 7.6600e+02 0.0000e+00 0.0000e+00 3.3473e+04 1.2000e+01
  1.0000e+00 6.0180e+03]
 gmm_is_gaussian: [0 4 7]
-* Result of soccer1 with M1 (8 Gaussian) *
+* Result of image1 with M1 (8 Gaussian) *
   Accuracy: 0.9781666666666666
   Precision: 0.9847960413301541
   Recall: 0.9899612108403458
-Prediction time of [Image: input/soccer1.jpg, Model: M1, Mixture#: 8]: 0.5378105640411377
+Prediction time of [Image: input/image1.jpg, Model: M1, Mixture#: 8]: 0.5378105640411377
 
->>> Image: input/soccer1.jpg, Model: M2, Mixture#: 8
+>>> Image: input/image1.jpg, Model: M2, Mixture#: 8
 pred_bins: [   58  2184   825 74433  2327  1292  4493  4388]
 playf_bins: [9.0000e+00 1.7660e+03 0.0000e+00 7.3992e+04 0.0000e+00 1.4000e+01
  1.3000e+01 1.8050e+03]
 gmm_is_gaussian: [1 3]
-* Result of soccer1 with M2 (8 Gaussian) *
+* Result of image1 with M2 (8 Gaussian) *
   Accuracy: 0.97
   Precision: 0.9887883889998303
   Recall: 0.9762754674673643
-Prediction time of [Image: input/soccer1.jpg, Model: M2, Mixture#: 8]: 1.0202491283416748
+Prediction time of [Image: input/image1.jpg, Model: M2, Mixture#: 8]: 1.0202491283416748
 
->>> Image: input/soccer2.jpg, Model: M1, Mixture#: 8
+>>> Image: input/image2.jpg, Model: M1, Mixture#: 8
 pred_bins: [    8 59931   808   153    30  8943  3701 13226]
 playf_bins: [8.0000e+00 4.2825e+04 0.0000e+00 0.0000e+00 2.8000e+01 0.0000e+00
  1.5000e+01 1.3099e+04]
 gmm_is_gaussian: [0 1 4 7]
-* Result of soccer2 with M1 (8 Gaussian) *
+* Result of image2 with M1 (8 Gaussian) *
   Accuracy: 0.8012672811059908
   Precision: 0.7645330965229865
   Recall: 0.9997320232246538
-Prediction time of [Image: input/soccer2.jpg, Model: M1, Mixture#: 8]: 1.538245677947998
+Prediction time of [Image: input/image2.jpg, Model: M1, Mixture#: 8]: 1.538245677947998
 
->>> Image: input/soccer2.jpg, Model: M2, Mixture#: 8
+>>> Image: input/image2.jpg, Model: M2, Mixture#: 8
 pred_bins: [23383 27969  4451    79  3757 15028  3661  8472]
 playf_bins: [23265. 26959.     0.    74.     0.   280.     0.  5397.]
 gmm_is_gaussian: [0 1 3]
-* Result of soccer2 with M2 (8 Gaussian) *
+* Result of image2 with M2 (8 Gaussian) *
   Accuracy: 0.9215437788018433
   Precision: 0.9779704847271101
   Recall: 0.8985797230906655
-Prediction time of [Image: input/soccer2.jpg, Model: M2, Mixture#: 8]: 2.1393117904663086
+Prediction time of [Image: input/image2.jpg, Model: M2, Mixture#: 8]: 2.1393117904663086
