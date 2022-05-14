@@ -1,171 +1,163 @@
-Training time of M1 (2 gaussians): 0.374614953994751
-Training time of M2 (2 gaussians): 1.0138461589813232
-
->>> Image: input/image1.jpg, Model: M1, Mixture#: 2
-pred_bins: [13382 76618]
-playf_bins: [ 1802. 75797.]
+=== Image: input/image1.jpg, Model: M1, Mixture#: 2 ===
+pred_bins: [13641 76359]
+playf_bins: [ 2051. 75548.]
 gmm_is_gaussian: [1]
-* Result of image1 with M1 (2 Gaussian) *
-  Accuracy: 0.9708555555555556
-  Precision: 0.9892845023362656
-  Recall: 0.9767780512635472
-Prediction time of [Image: input/image1.jpg, Model: M1, Mixture#: 2]: 0.5656783580780029
+>> Result of image1 with M1 (2 Gaussian) <<
+>>> Accuracy: 0.9682 
+>>> Precision: 0.9893791170654409 
+>>> Recall: 0.9735692470263793 
+>>> Prediction time: 0.7682499885559082
 
->>> Image: input/image1.jpg, Model: M2, Mixture#: 2
-pred_bins: [11856 78144]
-playf_bins: [  857. 76742.]
+=== Image: input/image1.jpg, Model: M2, Mixture#: 2 ===
+pred_bins: [12045 77955]
+playf_bins: [ 1038. 76561.]
 gmm_is_gaussian: [1]
-* Result of image1 with M2 (2 Gaussian) *
-  Accuracy: 0.9749
-  Precision: 0.9820587633087633 
-  Recall: 0.98895604324798
-Prediction time of [Image: input/image1.jpg, Model: M2, Mixture#: 2]: 1.0529344081878662
+>> Result of image1 with M2 (2 Gaussian) <<
+>>> Accuracy: 0.9729777777777778 
+>>> Precision: 0.9821178885254314 
+>>> Recall: 0.9866235389631309 
+>>> Prediction time: 1.3089368343353271
 
->>> Image: input/image2.jpg, Model: M1, Mixture#: 2
-pred_bins: [82810  3990]
-playf_bins: [51999.  3976.]
+=== Image: input/image2.jpg, Model: M1, Mixture#: 2 ===
+pred_bins: [82655  4145]
+playf_bins: [51855.  4120.]
 gmm_is_gaussian: [1]
-* Result of image2 with M1 (2 Gaussian) *
-  Accuracy: 0.4007718894009217
-  Precision: 0.9964912280701754
-  Recall: 0.07103171058508263
-Prediction time of [Image: input/image2.jpg, Model: M1, Mixture#: 2]: 1.6537163257598877
+>> Result of image2 with M1 (2 Gaussian) <<
+>>> Accuracy: 0.4023041474654378 
+>>> Precision: 0.9939686369119421 
+>>> Recall: 0.07360428762840554 
+>>> Prediction time: 1.9506559371948242
 
->>> Image: input/image2.jpg, Model: M2, Mixture#: 2
-pred_bins: [35677 51123]
-playf_bins: [ 6260. 49715.]
+=== Image: input/image2.jpg, Model: M2, Mixture#: 2 ===
+pred_bins: [35766 51034]
+playf_bins: [ 6372. 49603.]
 gmm_is_gaussian: [1]
-* Result of image2 with M2 (2 Gaussian) *
-  Accuracy: 0.9116589861751152
-  Precision: 0.9724585802867594
-  Recall: 0.8881643590888789
-Prediction time of [Image: input/image2.jpg, Model: M2, Mixture#: 2]: 2.179003953933716
-Training time of M1 (4 gaussians): 0.6314201354980469
-Training time of M2 (4 gaussians): 1.8702175617218018
+>> Result of image2 with M1 (2 Gaussian) <<
+>>> Accuracy: 0.9101036866359447 
+>>> Precision: 0.9719598698906611 
+>>> Recall: 0.8861634658329611 
+>>> Prediction time: 2.527582883834839
 
->>> Image: input/image1.jpg, Model: M1, Mixture#: 4
-pred_bins: [32604  7070  5969 44357]
-playf_bins: [3.1665e+04 2.4000e+01 1.5640e+03 4.4346e+04]
+=== Image: input/image1.jpg, Model: M1, Mixture#: 4 ===
+pred_bins: [32620  7095  6164 44121]
+playf_bins: [3.1687e+04 3.5000e+01 1.7710e+03 4.4106e+04]
 gmm_is_gaussian: [0 3]
-* Result of image1 with M1 (4 Gaussian) *
-  Accuracy: 0.9718
-  Precision: 0.987656085549824
-  Recall: 0.9795358187605511
-Prediction time of [Image: input/image1.jpg, Model: M1, Mixture#: 4]: 0.7164130210876465
+>> Result of image1 with M1 (4 Gaussian) <<
+>>> Accuracy: 0.9694 
+>>> Precision: 0.9876467598806374 
+>>> Recall: 0.9767265042075285 
+>>> Prediction time: 0.5576388835906982
 
->>> Image: input/image1.jpg, Model: M2, Mixture#: 4
-pred_bins: [ 3070 62931 16048  7951]
-playf_bins: [    0. 62654. 14572.   373.]
+=== Image: input/image1.jpg, Model: M2, Mixture#: 4 ===
+pred_bins: [ 3041 62733 16042  8184]
+playf_bins: [    0. 62463. 14577.   559.]
 gmm_is_gaussian: [1 2]
-* Result of image1 with M2 (4 Gaussian) *
-  Accuracy: 0.9763777777777778
-  Precision: 0.9778042264399397
-  Recall: 0.9951932370262503
-Prediction time of [Image: input/image1.jpg, Model: M2, Mixture#: 4]: 1.3842847347259521
+>> Result of image1 with M2 (4 Gaussian) <<
+>>> Accuracy: 0.9745111111111111 
+>>> Precision: 0.9779752459536655 
+>>> Recall: 0.9927962989213779 
+>>> Prediction time: 1.0995440483093262
 
->>> Image: input/image2.jpg, Model: M1, Mixture#: 4
-pred_bins: [ 5376 27675 53548   201]
-playf_bins: [ 5360.  3467. 46949.   199.]
+=== Image: input/image2.jpg, Model: M1, Mixture#: 4 ===
+pred_bins: [ 5533 27446 53576   245]
+playf_bins: [ 5508.  3395. 46829.   243.]
 gmm_is_gaussian: [0 2 3]
-* Result of image2 with M1 (4 Gaussian) *
-  Accuracy: 0.8838248847926268
-  Precision: 0.8880845665961945
-  Recall: 0.9380616346583296
-Prediction time of [Image: input/image2.jpg, Model: M1, Mixture#: 4]: 1.9004292488098145
+>> Result of image2 with M1 (4 Gaussian) <<
+>>> Accuracy: 0.8828456221198157 
+>>> Precision: 0.8858712133975806 
+>>> Recall: 0.939347923179991 
+>>> Prediction time: 1.6788418292999268
 
->>> Image: input/image2.jpg, Model: M2, Mixture#: 4
-pred_bins: [16021 39109 14459 17211]
-playf_bins: [    0. 38277. 13281.  4417.]
+=== Image: input/image2.jpg, Model: M2, Mixture#: 4 ===
+pred_bins: [15330 38969 14498 18003]
+playf_bins: [    0. 38088. 13371.  4516.]
 gmm_is_gaussian: [1 2]
-* Result of image2 with M2 (4 Gaussian) *
-  Accuracy: 0.9259562211981567
-  Precision: 0.9624775985663082
-  Recall: 0.921089772219741
-Prediction time of [Image: input/image2.jpg, Model: M2, Mixture#: 4]: 2.42630934715271
-Training time of M1 (6 gaussians): 0.8561129570007324
-Training time of M2 (6 gaussians): 5.750898838043213
+>> Result of image2 with M1 (4 Gaussian) <<
+>>> Accuracy: 0.9248387096774193 
+>>> Precision: 0.9624441244131895 
+>>> Recall: 0.9193211255024565 
+>>> Prediction time: 2.292681932449341
 
->>> Image: input/image1.jpg, Model: M1, Mixture#: 6
-pred_bins: [36502  2263 39529  2777  2058  6871]
-playf_bins: [3.5817e+04 0.0000e+00 3.9519e+04 8.0000e+00 3.0000e+00 2.2520e+03]
+=== Image: input/image1.jpg, Model: M1, Mixture#: 6 ===
+pred_bins: [36474  2271 39308  2796  2071  7080]
+playf_bins: [3.5783e+04 0.0000e+00 3.9297e+04 4.0000e+00 4.0000e+00 2.5110e+03]
 gmm_is_gaussian: [0 2]
-* Result of image1 with M1 (6 Gaussian) *
-  Accuracy: 0.9671333333333333
-  Precision: 0.9908589917270587
-  Recall: 0.9708372530573848
-Prediction time of [Image: input/image1.jpg, Model: M1, Mixture#: 6]: 0.5896096229553223
+>> Result of image1 with M1 (6 Gaussian) <<
+>>> Accuracy: 0.9642111111111111 
+>>> Precision: 0.9907365865245045 
+>>> Recall: 0.9675382414721839 
+>>> Prediction time: 0.567234992980957
 
->>> Image: input/image1.jpg, Model: M2, Mixture#: 6
-pred_bins: [   56  3794 74777  6467  2680  2226]
-playf_bins: [9.0000e+00 2.0000e+00 7.4263e+04 1.5250e+03 0.0000e+00 1.8000e+03]
+=== Image: input/image1.jpg, Model: M2, Mixture#: 6 ===
+pred_bins: [   55  3792 74480  6775  2668  2230]
+playf_bins: [1.3000e+01 4.0000e+00 7.3971e+04 1.7800e+03 0.0000e+00 1.8310e+03]
 gmm_is_gaussian: [2 5]
-* Result of image1 with M2 (6 Gaussian) *
-  Accuracy: 0.9724888888888888
-  Precision: 0.9877926834019454
-  Recall: 0.980205930488795
-Prediction time of [Image: input/image1.jpg, Model: M2, Mixture#: 6]: 1.0950818061828613
+>> Result of image1 with M2 (6 Gaussian) <<
+>>> Accuracy: 0.9699444444444445 
+>>> Precision: 0.9881632120975101 
+>>> Recall: 0.9768424850835706 
+>>> Prediction time: 1.1197998523712158
 
->>> Image: input/image2.jpg, Model: M1, Mixture#: 6
-pred_bins: [ 1867  3674   129  3699  7045 70386]
-playf_bins: [1.8650e+03 0.0000e+00 1.2700e+02 0.0000e+00 2.1000e+01 5.3962e+04]
+=== Image: input/image2.jpg, Model: M1, Mixture#: 6 ===
+pred_bins: [ 2005  3717   173  3839  7557 69509]
+playf_bins: [1.9960e+03 0.0000e+00 1.7200e+02 0.0000e+00 2.8000e+01 5.3779e+04]
 gmm_is_gaussian: [0 2 5]
-* Result of image2 with M1 (6 Gaussian) *
-  Accuracy: 0.8104953917050691
-  Precision: 0.7730374955099334
-  Recall: 0.9996248325145154
-Prediction time of [Image: input/image2.jpg, Model: M1, Mixture#: 6]: 1.6267387866973877
+>> Result of image2 with M1 (6 Gaussian) <<
+>>> Accuracy: 0.8183410138248848 
+>>> Precision: 0.780434388382831 
+>>> Recall: 0.9994997766860205 
+>>> Prediction time: 1.703200101852417
 
->>> Image: input/image2.jpg, Model: M2, Mixture#: 6
-pred_bins: [23399  4945    79 23475  6977 27925]
-playf_bins: [2.3282e+04 0.0000e+00 7.4000e+01 5.5390e+03 1.0000e+00 2.7079e+04]
+=== Image: input/image2.jpg, Model: M2, Mixture#: 6 ===
+pred_bins: [23140  5274   227 23692  6979 27488]
+playf_bins: [2.3042e+04 0.0000e+00 2.2400e+02 5.9860e+03 1.0000e+00 2.6722e+04]
 gmm_is_gaussian: [0 2 5]
-* Result of image2 with M2 (6 Gaussian) *
-  Accuracy: 0.9250230414746544
-  Precision: 0.9811684142948855
-  Recall: 0.9010272443054935
-Prediction time of [Image: input/image2.jpg, Model: M2, Mixture#: 6]: 2.1876769065856934
-Training time of M1 (8 gaussians): 1.6108524799346924
-Training time of M2 (8 gaussians): 7.242374420166016
+>> Result of image2 with M1 (6 Gaussian) <<
+>>> Accuracy: 0.921036866359447 
+>>> Precision: 0.9829515288565529 
+>>> Recall: 0.8930415364001787 
+>>> Prediction time: 2.310387134552002
 
->>> Image: input/image1.jpg, Model: M1, Mixture#: 8
-pred_bins: [37509  5408  1843   950 33480  2033  1760  7017]
-playf_bins: [3.7329e+04 7.6600e+02 0.0000e+00 0.0000e+00 3.3473e+04 1.2000e+01
- 1.0000e+00 6.0180e+03]
+=== Image: input/image1.jpg, Model: M1, Mixture#: 8 ===
+pred_bins: [37450  5600  1885   954 33296  1988  1792  7035]
+playf_bins: [3.7264e+04 1.0070e+03 0.0000e+00 0.0000e+00 3.3291e+04 8.0000e+00
+ 3.0000e+00 6.0260e+03]
 gmm_is_gaussian: [0 4 7]
-* Result of image1 with M1 (8 Gaussian) *
-  Accuracy: 0.9781666666666666
-  Precision: 0.9847960413301541
-  Recall: 0.9899612108403458
-Prediction time of [Image: input/image1.jpg, Model: M1, Mixture#: 8]: 0.5378105640411377
+>> Result of image1 with M1 (8 Gaussian) <<
+>>> Accuracy: 0.9753555555555555 
+>>> Precision: 0.9845720677286227 
+>>> Recall: 0.9868812742432248 
+>>> Prediction time: 0.5726461410522461
 
->>> Image: input/image1.jpg, Model: M2, Mixture#: 8
-pred_bins: [   58  2184   825 74433  2327  1292  4493  4388]
-playf_bins: [9.0000e+00 1.7660e+03 0.0000e+00 7.3992e+04 0.0000e+00 1.4000e+01
- 1.3000e+01 1.8050e+03]
+=== Image: input/image1.jpg, Model: M2, Mixture#: 8 ===
+pred_bins: [   62  2179   831 74150  2336  1276  4456  4710]
+playf_bins: [1.3000e+01 1.7810e+03 0.0000e+00 7.3707e+04 0.0000e+00 1.0000e+01
+ 1.4000e+01 2.0740e+03]
 gmm_is_gaussian: [1 3]
-* Result of image1 with M2 (8 Gaussian) *
-  Accuracy: 0.97
-  Precision: 0.9887883889998303
-  Recall: 0.9762754674673643
-Prediction time of [Image: input/image1.jpg, Model: M2, Mixture#: 8]: 1.0202491283416748
+>> Result of image1 with M2 (8 Gaussian) <<
+>>> Accuracy: 0.9672 
+>>> Precision: 0.988981907269845 
+>>> Recall: 0.9727960411860977 
+>>> Prediction time: 1.144402027130127
 
->>> Image: input/image2.jpg, Model: M1, Mixture#: 8
-pred_bins: [    8 59931   808   153    30  8943  3701 13226]
-playf_bins: [8.0000e+00 4.2825e+04 0.0000e+00 0.0000e+00 2.8000e+01 0.0000e+00
- 1.5000e+01 1.3099e+04]
+=== Image: input/image2.jpg, Model: M1, Mixture#: 8 ===
+pred_bins: [   47 59242   959   162    81  8904  4261 13144]
+playf_bins: [4.7000e+01 4.2791e+04 0.0000e+00 0.0000e+00 8.0000e+01 0.0000e+00
+ 2.0000e+01 1.3037e+04]
 gmm_is_gaussian: [0 1 4 7]
-* Result of image2 with M1 (8 Gaussian) *
-  Accuracy: 0.8012672811059908
-  Precision: 0.7645330965229865
-  Recall: 0.9997320232246538
-Prediction time of [Image: input/image2.jpg, Model: M1, Mixture#: 8]: 1.538245677947998
+>> Result of image2 with M1 (8 Gaussian) <<
+>>> Accuracy: 0.8089976958525346 
+>>> Precision: 0.7716440963124362 
+>>> Recall: 0.9996426976328718 
+>>> Prediction time: 1.721229076385498
 
->>> Image: input/image2.jpg, Model: M2, Mixture#: 8
-pred_bins: [23383 27969  4451    79  3757 15028  3661  8472]
-playf_bins: [23265. 26959.     0.    74.     0.   280.     0.  5397.]
+=== Image: input/image2.jpg, Model: M2, Mixture#: 8 ===
+pred_bins: [23134 27506  4365   214  3772 14777  4088  8944]
+playf_bins: [2.3032e+04 2.6596e+04 0.0000e+00 2.1100e+02 0.0000e+00 3.0600e+02
+ 2.0000e+00 5.8280e+03]
 gmm_is_gaussian: [0 1 3]
-* Result of image2 with M2 (8 Gaussian) *
-  Accuracy: 0.9215437788018433
-  Precision: 0.9779704847271101
-  Recall: 0.8985797230906655
-Prediction time of [Image: input/image2.jpg, Model: M2, Mixture#: 8]: 2.1393117904663086
+>> Result of image2 with M1 (8 Gaussian) <<
+>>> Accuracy: 0.9176152073732718 
+>>> Precision: 0.9800409014040193 
+>>> Recall: 0.8903796337650737 
+>>> Prediction time: 2.3686389923095703
